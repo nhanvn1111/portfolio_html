@@ -1,0 +1,223 @@
+@red1: #ff5959;
+@red2: #f34343; //main
+@red3: #e33939;
+@black: #000000;
+.colored{color: @red2;}
+.coloredGray{background: #f3f3f3; padding: 18px 0}
+.lightText{color: #9e9e9e;}
+.darkBg{background: @black;}
+.grayBg{background: #212121;}
+.iconBg{
+	background: @red2;
+}
+.navTop{
+	ul{
+		li{
+			&:nth-child(1){
+				a{
+					background: url(../img/social.png) 0 0 no-repeat;
+					background-color: @red1;
+				}
+			}
+			&:nth-child(2){
+				a{
+					background: url(../img/social.png) -29px 0 no-repeat;
+					background-color: @red2;
+				}
+			}
+			&:nth-child(3){
+				a{
+					background: url(../img/social.png) -58px 0 no-repeat;
+					background-color: @red3;
+				}
+			}
+			&:nth-child(4){
+				a{
+					background: url(../img/social.png) -87px 0 no-repeat;
+					background-color: darken(@red3, 10%);
+				}
+			}
+		}
+	}
+}
+.brand{
+	&::after{
+		background: @red2;
+	}
+}
+
+.menu{
+	li{
+
+		a{
+			&:hover{
+				color: @red2;
+			}
+		}
+
+		> ul{
+			border-top: 2px solid @red2;
+		}
+	}
+}
+.active{
+	> a{
+		color: @red2 !important;
+	}
+}
+.rs_mainslider_items_text h2, .introMess h2{
+	background-color: hsla(hue(@red2), saturation(@red2), lightness(@red2), 0.5);
+}
+.rs_mainslider .rs_mainslider_dots_container ul.rs_mainslider_dots li.rs_mainslider_dots_active {
+    background: @red1;
+}
+.coloredSection{
+	background: @red2;
+	color: white;
+	
+	h3{
+		color: white;
+	}
+}
+.portfolioItems{
+	li{
+		figure{
+
+			&:hover{
+				border-bottom: 1px solid @red2 !important;
+
+				&:after{
+					border-bottom: 5px solid @red2;
+				}
+			}
+
+			h3{
+				a{
+					&:hover{
+						color: @red2;
+					}
+				}
+			}
+		}
+	}
+}
+.recentPosts{
+	li{
+		&::before{
+			background: @red2;
+		}
+	}
+}
+.btn{
+	&:hover,
+  &:focus {
+  	background-color: @red2 !important;
+  }
+}
+.btn-color{
+	background: @red2;
+}
+.accordion-heading-active{
+	
+	&::after{
+		background: @red2;
+	}
+}
+.nav-tabs >.active{
+	border-top: 1px solid @red2;
+	
+	&:after{
+		border-top: 5px solid @red2;
+	}
+}
+.pricingTable{
+	> li{
+		h3{
+			background-color: @red2;
+			border: 1px solid @red2;
+		}
+	  }
+}
+.sidebarMenu{
+	ul{
+		li{
+			a{
+				&:hover{
+					b{
+						color: @red2;
+					}
+				}
+			}
+		}
+	}
+}
+.sidebarMenu .active{
+	a{
+		b{
+			color: @red2;
+		}
+	}
+}
+address{
+	ul{
+		li{
+			a{
+				&:hover{
+					color: @red2;
+				}
+			}
+		}
+	}
+}
+.blogItems{
+	a{
+		&:hover{
+			color: @red2;
+		}
+	}
+}
+.postDate{
+	ul{
+		.date{
+			background: @red2;
+		}
+	}
+}
+.blogBreadcrumb{
+	li.active{
+		color: @red2;
+	}
+}
+.readMore{
+	color: @red2;
+}
+.arrowRight, .arrowLeft{
+	a{
+		&:hover{
+			background: @red2;
+		}
+	}
+}
+
+.photoControl{
+	ul li a{
+		&:hover{
+			color: @red2;
+		}
+	}
+}
+.servicesFeatures li figure a img{
+	background-color: @red2;
+}
+.progress .bar{
+	background-color: @red2;
+}
+.pagination li a{
+	
+	&:hover{
+		color: @red2;
+	}
+}
+.colored{
+	color: @red2 !important;
+}
